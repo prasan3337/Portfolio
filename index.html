@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags -->
+  <title>Prasanjeet Shirsat | Computer Engineering Portfolio</title>
+  <meta name="title" content="Prasanjeet Shirsat | Portfolio - ML, Deep Learning & Cloud">
+  <meta name="description" content="Portfolio of Prasanjeet Shirsat - Final Year Computer Engineering student specializing in Machine Learning, Deep Learning, Cloud Computing, and Data Structures &amp; Algorithms.">
+  <meta name="keywords" content="Prasanjeet Shirsat, Machine Learning, Deep Learning, Cloud, Data Structures, Algorithms, Portfolio, Computer Engineering, PyTorch, AWS">
+  <meta name="author" content="Prasanjeet Shirsat">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Prasanjeet Shirsat | Computer Engineering Portfolio">
+  <meta property="og:description" content="Portfolio of Prasanjeet Shirsat - Final Year Computer Engineering student specializing in Machine Learning, Deep Learning, Cloud Computing, and Data Structures &amp; Algorithms.">
+
+  <!-- Fonts & Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Background decorative glows -->
+  <div class="bg-glow-container">
+    <div class="bg-glow-1"></div>
+    <div class="bg-glow-2"></div>
+  </div>
+
+  <!-- Particle Background Canvas -->
+  <canvas id="particlesCanvas" class="particles-canvas"></canvas>
+
+  <!-- NAVIGATION BAR -->
+  <header id="header">
+    <div class="nav-container">
+      <a href="#home" class="logo">
+        <i class="fa-solid fa-brain"></i> Prasanjeet<span>.</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#timeline">Timeline</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="https://github.com/prasan3337" target="_blank" class="github-btn" id="navGithubLink">
+        <i class="fa-brands fa-github"></i> GitHub
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="hero">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <span class="hero-tag">B-Tech Computer Engineering</span>
+        <h1 class="gradient-text">Prasanjeet Shirsat</h1>
+        <h2>I specialize in <span id="typewriterText"></span><span class="typewriter-cursor">|</span></h2>
+        <p>A passionate developer and final year Computer Engineering student. I focus on developing advanced Deep Learning architectures, deploying scalable models on the Cloud, and crafting optimal algorithmic solutions.</p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn-primary"><i class="fa-solid fa-rocket"></i> View My Work</a>
+          <a href="#contact" class="btn-secondary"><i class="fa-regular fa-paper-plane"></i> Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="sphere-container">
+          <div class="sphere-orbit-1"></div>
+          <div class="sphere-orbit-2"></div>
+          <div class="sphere-core"></div>
+          <span class="sphere-overlay tag-ml">PyTorch</span>
+          <span class="sphere-overlay tag-dl">CNN &amp; Transformers</span>
+          <span class="sphere-overlay tag-cloud">AWS / Docker</span>
+          <span class="sphere-overlay tag-dsa">C++ / Algorithms</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about">
+    <div class="section-header">
+      <h2>About Me</h2>
+      <p>Building high-performance, intelligent software systems from foundation to deployment.</p>
+    </div>
+    <div class="about-grid">
+      <div class="about-visual-card glass-panel">
+        <div class="profile-avatar-mock">
+          <i class="fa-solid fa-code"></i>
+        </div>
+        <h3 style="text-align: center; margin-bottom: 0.5rem;" class="gradient-text">Prasanjeet Shirsat</h3>
+        <p style="text-align: center; color: var(--text-sub); font-size: 0.95rem; margin-bottom: 1.5rem;">Computer Engineering Student</p>
+        <div class="about-card-stat">
+          <div class="stat-box">
+            <span class="stat-number">500+</span>
+            <span class="stat-label">DSA Solved</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-number">12+</span>
+            <span class="stat-label">Projects</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-info">
+        <h3 class="gradient-text-alt" style="font-size: 1.8rem; font-weight: 700;">Final Year Computer Engineer</h3>
+        <p class="about-bio">Currently pursuing my B-Tech in Computer Engineering. I am driven by the synergy of mathematical modeling and cloud engineering. My primary focus lies in creating efficient machine learning pipelines and leveraging robust algorithms to tackle real-world problems.</p>
+        <div class="about-fields">
+          <div class="about-field">
+            <div class="field-icon"><i class="fa-solid fa-brain"></i></div>
+            <div class="field-content">
+              <h4>Machine &amp; Deep Learning</h4>
+              <p>Specialized in NLP, Computer Vision, and model optimization using PyTorch.</p>
+            </div>
+          </div>
+          <div class="about-field">
+            <div class="field-icon"><i class="fa-solid fa-cloud"></i></div>
+            <div class="field-content">
+              <h4>Cloud &amp; Deployment</h4>
+              <p>Designing dockerized applications and orchestration workflows on AWS/GCP.</p>
+            </div>
+          </div>
+          <div class="about-field">
+            <div class="field-icon"><i class="fa-solid fa-cubes"></i></div>
+            <div class="field-content">
+              <h4>Data Structures &amp; Algorithms</h4>
+              <p>Strong problem-solving foundation in complex data structures and graphs in C++.</p>
+            </div>
+          </div>
+          <div class="about-field">
+            <div class="field-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="field-content">
+              <h4>Computer Engineering Core</h4>
+              <p>Deep academic knowledge of Operating Systems, DBMS, and Networking.</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-edu-tag">
+          <i class="fa-solid fa-laptop-code"></i>
+          <span>Actively looking for ML Engineering &amp; Software Development opportunities.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section id="skills">
+    <div class="section-header">
+      <h2>Skills &amp; Expertise</h2>
+      <p>My technical stack categorized by domain, developed through university and practical projects.</p>
+    </div>
+    <div class="skills-tabs-container">
+      <ul class="skills-tabs">
+        <li><button class="tab-btn active" onclick="switchSkillTab(event, 'ml-skills')">AI / ML / DL</button></li>
+        <li><button class="tab-btn" onclick="switchSkillTab(event, 'cloud-skills')">Cloud &amp; DevOps</button></li>
+        <li><button class="tab-btn" onclick="switchSkillTab(event, 'dsa-skills')">DSA &amp; Programming</button></li>
+      </ul>
+      
+      <div class="skills-content-wrapper">
+        <!-- Tab 1: ML/DL -->
+        <div id="ml-skills" class="skills-panel active">
+          <div class="skill-category-card glass-panel">
+            <h3><i class="fa-solid fa-network-wired" style="color: var(--accent-cyan);"></i> Frameworks &amp; Libs</h3>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-name-row"><span>PyTorch</span><span class="skill-percentage">90%</span></div>
+                <div class="skill-progress-bar"><div class="skill-progress-fill" data-width="90%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name-row"><span>TensorFlow / Keras</span><span class="skill-percentage">75%</span></div>
+                <div class="skill-progress-bar"><div class="skill-progress-fill" data-width="75%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name-row"><span>Scikit-Learn</span><span class="skill-percentage">85%</span></div>
+                <div class="skill-progress-bar"><div class="skill-progress-fill" data-width="85%"></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-category-card glass-panel">
+            <h3><i class="fa-solid fa-eye" style="color: var(--accent-blue);"></i> Domains</h3>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-name-row"><span>Natural Language Processing (NLP)</span><span class="skill-percentage">85%</span></div>
+                <div class="skill-progress-bar"><div class="skill-progress-fill" data-width="85%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name-row"><span>Computer Vision (CV)</span><span class="skill-percentage">80%</span></div>
+                <div class="skill-progress-bar"><div class="skill-progress-fill" data-width="80%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name-row"><span>Transformers &amp; LLM Fine-Tuning</span><span class="skill-percentage">70%</span></div>
+                <div class="skill-progress-bar"><div class="skill-progress-fill" data-width="70%"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 2: Cloud & DevOps -->
+        <div id="cloud-skills" class="skills-panel">
+          <div class="skill-category-card glass-panel">
+            <h3><i class="fa-solid fa-cloud" style="color: var(--accent-purple);"></i> Cloud Infrastructure</h3>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-name-row"><span>Amazon Web Services (AWS)</span><span class="skill-percentage">80%</span></div>
+                <div class="skill-progress-bar"><div class="skill-progress-fill" data-width="80%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name-row"><span>Google Cloud Platform (GCP)</span><span class="skill-percentage">70%</span></div>
+                <div class="skill-progress-bar"><div class="skill-progress-fill" data-width="70%"></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-category-card glass-panel">
+            <h3><i class="fa-solid fa-gears" style="color: var(--accent-magenta);"></i> DevOps Tools</h3>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-name-row"><span>Docker &amp; Containers</span><span class="skill-percentage">85%</span></div>
+                <div class="skill-progress-bar"><div class="skill-progress-fill" data-width="85%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name-row"><span>Git &amp; GitHub Actions (CI/CD)</span><span class="skill-percentage">80%</span></div>
+                <div class="skill-progress-bar"><div class="skill-progress-fill" data-width="80%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name-row"><span>Linux Shell Scripting</span><span class="skill-percentage">75%</span></div>
+                <div class="skill-progress-bar"><div class="skill-progress-fill" data-width="75%"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab 3: DSA & Programming -->
+        <div id="dsa-skills" class="skills-panel">
+          <div class="skill-category-card glass-panel">
+            <h3><i class="fa-solid fa-laptop-code" style="color: var(--accent-cyan);"></i> Programming Languages</h3>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-name-row"><span>C++</span><span class="skill-percentage">90%</span></div>
+                <div class="skill-progress-bar"><div class="skill-progress-fill" data-width="90%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name-row"><span>Python</span><span class="skill-percentage">90%</span></div>
+                <div class="skill-progress-bar"><div class="skill-progress-fill" data-width="90%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name-row"><span>SQL</span><span class="skill-percentage">80%</span></div>
+                <div class="skill-progress-bar"><div class="skill-progress-fill" data-width="80%"></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-category-card glass-panel">
+            <h3><i class="fa-solid fa-cubes-stacked" style="color: var(--accent-blue);"></i> CS Fundamentals</h3>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-name-row"><span>Data Structures &amp; Algorithms</span><span class="skill-percentage">90%</span></div>
+                <div class="skill-progress-bar"><div class="skill-progress-fill" data-width="90%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name-row"><span>Operating Systems</span><span class="skill-percentage">80%</span></div>
+                <div class="skill-progress-bar"><div class="skill-progress-fill" data-width="80%"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name-row"><span>Database Management (DBMS)</span><span class="skill-percentage">80%</span></div>
+                <div class="skill-progress-bar"><div class="skill-progress-fill" data-width="80%"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects">
+    <div class="section-header">
+      <h2>Featured Projects</h2>
+      <p>A compilation of my academic and personal projects demonstrating end-to-end capabilities.</p>
+    </div>
+    
+    <div class="projects-filter-bar">
+      <button class="filter-btn active" data-filter="all">All Projects</button>
+      <button class="filter-btn" data-filter="ml">Deep Learning / ML</button>
+      <button class="filter-btn" data-filter="cloud">Cloud &amp; DevOps</button>
+      <button class="filter-btn" data-filter="dsa">DSA &amp; Core</button>
+    </div>
+
+    <div class="projects-grid">
+      <!-- Project 1 -->
+      <div class="project-card glass-panel" data-category="ml">
+        <div class="project-card-header">
+          <i class="fa-solid fa-brain project-icon-placeholder"></i>
+          <div class="project-badges">
+            <span class="project-badge">PyTorch</span>
+            <span class="project-badge">Deep Learning</span>
+          </div>
+        </div>
+        <div class="project-card-body">
+          <h3>NeuroScan AI</h3>
+          <p>An automated brain tumor MRI segmentation engine utilizing a custom 3D U-Net architecture. Employs deep residual blocks and attention gates to segment neoplastic lesions with high Dice Coefficient accuracy.</p>
+          <div class="project-tags">
+            <span class="project-tag">Computer Vision</span>
+            <span class="project-tag">U-Net</span>
+            <span class="project-tag">MRI Segmentation</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/prasan3337" target="_blank" class="project-link-btn"><i class="fa-brands fa-github"></i> Repository</a>
+            <a href="#" class="project-link-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card glass-panel" data-category="cloud">
+        <div class="project-card-header">
+          <i class="fa-solid fa-cloud-arrow-up project-icon-placeholder"></i>
+          <div class="project-badges">
+            <span class="project-badge">AWS</span>
+            <span class="project-badge">Docker</span>
+          </div>
+        </div>
+        <div class="project-card-body">
+          <h3>CloudOps Deploy</h3>
+          <p>An auto-scaling ML inference pipeline. Bundles model weights using Docker, exposes them via FastAPI, and automates CI/CD deployment to AWS ECS with real-time health metrics monitoring via Prometheus.</p>
+          <div class="project-tags">
+            <span class="project-tag">FastAPI</span>
+            <span class="project-tag">ECS Fargate</span>
+            <span class="project-tag">CI/CD</span>
+            <span class="project-tag">Prometheus</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/prasan3337" target="_blank" class="project-link-btn"><i class="fa-brands fa-github"></i> Repository</a>
+            <a href="#" class="project-link-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Architecture</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card glass-panel" data-category="dsa">
+        <div class="project-card-header">
+          <i class="fa-solid fa-route project-icon-placeholder"></i>
+          <div class="project-badges">
+            <span class="project-badge">C++</span>
+            <span class="project-badge">JS</span>
+          </div>
+        </div>
+        <div class="project-card-body">
+          <h3>AlgoVis</h3>
+          <p>An interactive graph algorithms visualizer that helps students understand pathfinding. Graph architectures are modeled in C++ WebAssembly for intensive computations, and animated smoothly on HTML5 Canvas.</p>
+          <div class="project-tags">
+            <span class="project-tag">Pathfinding</span>
+            <span class="project-tag">WebAssembly</span>
+            <span class="project-tag">Dijkstra</span>
+            <span class="project-tag">A* Search</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/prasan3337" target="_blank" class="project-link-btn"><i class="fa-brands fa-github"></i> Repository</a>
+            <a href="#" class="project-link-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Visualizer</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="project-card glass-panel" data-category="ml">
+        <div class="project-card-header">
+          <i class="fa-solid fa-magnifying-glass project-icon-placeholder"></i>
+          <div class="project-badges">
+            <span class="project-badge">NLP</span>
+            <span class="project-badge">Milvus</span>
+          </div>
+        </div>
+        <div class="project-card-body">
+          <h3>SemSearch</h3>
+          <p>Semantic search engine utilizing pre-trained Sentence-BERT embeddings. High-dimensional vector embeddings are indexed using the Milvus vector database, offering sub-millisecond retrieval of contextually relevant research literature.</p>
+          <div class="project-tags">
+            <span class="project-tag">Sentence-BERT</span>
+            <span class="project-tag">Vector DB</span>
+            <span class="project-tag">Information Retrieval</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/prasan3337" target="_blank" class="project-link-btn"><i class="fa-brands fa-github"></i> Repository</a>
+            <a href="#" class="project-link-btn"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION & EXPERIENCE TIMELINE -->
+  <section id="timeline">
+    <div class="section-header">
+      <h2>Education &amp; Experience</h2>
+      <p>My academic trajectory and engineering projects timeline.</p>
+    </div>
+    
+    <div class="timeline-container">
+      <div class="timeline-item">
+        <div class="timeline-node"><i class="fa-solid fa-graduation-cap"></i></div>
+        <div class="timeline-card glass-panel">
+          <span class="timeline-date">2023 - Present</span>
+          <h3>B-Tech in Computer Engineering</h3>
+          <p class="timeline-subtitle">Final Year Student</p>
+          <p>Focusing on core engineering subjects including Operating Systems, DBMS, Machine Learning, and Distributed Cloud Computing. Maintained a strong academic record with practical hands-on lab experiences.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-node"><i class="fa-solid fa-laptop-code"></i></div>
+        <div class="timeline-card glass-panel">
+          <span class="timeline-date">2024 - 2025</span>
+          <h3>Deep Learning Research &amp; Projects</h3>
+          <p class="timeline-subtitle">Independent Study &amp; Academic Labs</p>
+          <p>Investigated modern neural network paradigms. Implemented and fine-tuned Transformer models (BERT, GPT variants) for semantic textual operations, and U-Net variants for precise image segmentation workloads.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-node"><i class="fa-solid fa-code-fork"></i></div>
+        <div class="timeline-card glass-panel">
+          <span class="timeline-date">2023 - 2024</span>
+          <h3>Data Structures &amp; Problem Solving</h3>
+          <p class="timeline-subtitle">Competitive Programming &amp; DSA Architectures</p>
+          <p>Engaged in continuous coding cycles. Solved 500+ algorithmic tasks across online repositories (LeetCode, GFG, Codeforces). Developed a deep intuition for advanced dynamic programming, graph schemas, and time-space optimization.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact">
+    <div class="section-header">
+      <h2>Get In Touch</h2>
+      <p>Have an exciting opportunity or project? Reach out and let's collaborate.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info-panel">
+        <div class="contact-card-sub glass-panel">
+          <h3>Contact Details</h3>
+          <div class="contact-detail">
+            <div class="contact-detail-icon"><i class="fa-regular fa-envelope"></i></div>
+            <div class="contact-detail-content">
+              <h4>Email</h4>
+              <p>prasanjeetshirsat@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="contact-detail-content">
+              <h4>Location</h4>
+              <p>Maharashtra, India</p>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-icon"><i class="fa-brands fa-github"></i></div>
+            <div class="contact-detail-content">
+              <h4>GitHub Profile</h4>
+              <p>github.com/prasan3337</p>
+            </div>
+          </div>
+          
+          <div class="social-links">
+            <a href="https://github.com/prasan3337" target="_blank" class="social-btn"><i class="fa-brands fa-github"></i></a>
+            <a href="#" class="social-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="social-btn"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form-panel glass-panel">
+        <form id="contactForm" onsubmit="handleContactSubmit(event)">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" class="form-control" placeholder="Your name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" class="form-control" placeholder="abc@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" class="form-control" placeholder="Project Discussion" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" class="form-control" placeholder="Write your message here..." required></textarea>
+          </div>
+          <button type="submit" class="btn-primary submit-btn"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+          
+          <div id="formMessage" class="form-message"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-content">
+      <a href="#home" class="footer-logo">Prasanjeet<span>.</span></a>
+      <span class="footer-copy">&copy; 2026 Prasanjeet Shirsat. All rights reserved.</span>
+      <button class="scroll-top-btn" onclick="scrollToTop()" aria-label="Scroll to Top">
+        <i class="fa-solid fa-arrow-up"></i>
+      </button>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
