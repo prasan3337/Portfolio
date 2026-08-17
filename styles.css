@@ -730,8 +730,10 @@ section {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
   gap: 2.5rem;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .project-card {
@@ -962,15 +964,17 @@ section {
 
 /* --- CONTACT SECTION --- */
 .contact-grid {
-  display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
-  gap: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact-info-panel {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  width: 100%;
+  max-width: 550px;
 }
 
 .contact-card-sub {
@@ -1242,8 +1246,11 @@ footer {
   .hero h2 {
     font-size: 1.8rem;
   }
-  .about-grid, .contact-grid {
+  .about-grid {
     grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .contact-grid {
     gap: 3rem;
   }
   .about-visual-card {

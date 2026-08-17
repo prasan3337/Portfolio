@@ -1,9 +1,9 @@
 // --- CONSTANTS & STATE ---
 const TYPEWRITER_PHRASES = [
-  "Machine Learning",
-  "Deep Learning",
-  "Cloud Computing",
-  "Data Structures & Algorithms"
+  "Full Stack Development",
+  "MERN Stack",
+  "Data Structures & Algorithms",
+  "Competitive Programming"
 ];
 
 let typewriterIndex = 0;
@@ -18,7 +18,6 @@ document.addEventListener("DOMContentLoaded", () => {
   initStickyHeader();
   initMobileMenu();
   initSkillProgressAnimation();
-  initProjectFilters();
   initScrollSpy();
 });
 
@@ -229,39 +228,6 @@ function initSkillProgressAnimation() {
   observer.observe(skillsSection);
 }
 
-// --- PROJECT GRID FILTERS ---
-function initProjectFilters() {
-  const filterButtons = document.querySelectorAll(".filter-btn");
-  const projectCards = document.querySelectorAll(".project-card");
-
-  filterButtons.forEach(btn => {
-    btn.addEventListener("click", () => {
-      // Toggle active classes
-      filterButtons.forEach(b => b.classList.remove("active"));
-      btn.classList.add("active");
-
-      const filterValue = btn.getAttribute("data-filter");
-
-      projectCards.forEach(card => {
-        const cardCategory = card.getAttribute("data-category");
-        
-        if (filterValue === "all" || cardCategory === filterValue) {
-          card.style.display = "flex";
-          setTimeout(() => {
-            card.style.opacity = "1";
-            card.style.transform = "scale(1)";
-          }, 50);
-        } else {
-          card.style.opacity = "0";
-          card.style.transform = "scale(0.95)";
-          setTimeout(() => {
-            card.style.display = "none";
-          }, 350);
-        }
-      });
-    });
-  });
-}
 
 // --- SCROLL SPY ACTIVE NAV LINK ---
 function initScrollSpy() {
@@ -296,27 +262,4 @@ function scrollToTop() {
   });
 }
 
-// --- CONTACT FORM HANDLER ---
-function handleContactSubmit(event) {
-  event.preventDefault();
-  
-  const form = document.getElementById("contactForm");
-  const formMessage = document.getElementById("formMessage");
-  const submitBtn = form.querySelector(".submit-btn");
 
-  // Visual submission effect
-  submitBtn.disabled = true;
-  submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Sending...';
-  formMessage.className = "form-message";
-  formMessage.style.display = "none";
-
-  setTimeout(() => {
-    submitBtn.disabled = false;
-    submitBtn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> Send Message';
-
-    // Simulate success
-    formMessage.textContent = "Thank you for reaching out! Your message was submitted successfully.";
-    formMessage.classList.add("success");
-    form.reset();
-  }, 1500);
-}
